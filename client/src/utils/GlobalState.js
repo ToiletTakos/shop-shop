@@ -10,6 +10,8 @@ const StoreProvider = ({ value = [], ...props}) => {
     //because useReducer() is wrapped in this  every time we run useProductReducer() we receieve the state and dispatch;
     const [state, dispatch] = useProductReducer({
         products: [],
+        cart: [],
+        cartOpen: false,
         categories: [],
         currentCategory: '',
     });
